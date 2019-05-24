@@ -11,7 +11,7 @@ var success = function(data){
      hr.innerHTML = "Horaire: " + data.dt;
      tw.innerHTML = "Lieu: " + data.name;
      wh.innerHTML = "Condition meteo: " + data.weather[0].description;
-     wim.setAttribute("src", "http://openweathermap.org/img/w/"+data.weather[0].icon+".png");
+     wim.setAttribute("src", "https://openweathermap.org/img/w/"+data.weather[0].icon+".png");
 }
 var success2 = function(dataI){
      var tit = document.getElementById('title');
@@ -22,7 +22,7 @@ var success2 = function(dataI){
 }
 function appel(){
          let city = document.getElementById("truc").value;
-         var url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&lang=fr&appid=22b673e2f8d2486cd9234e78213e22f3";
+         var url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&lang=fr&appid=22b673e2f8d2486cd9234e78213e22f3";
          
          $.get(url, success).done(function() {
 
