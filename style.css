@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#b3c6ff));
+  background: linear-gradient(#ffffff, #b3c6ff);
+}
+
+body .info {
+  padding: 50px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: blue;
+}
+
+body #weather {
+  width: 50vw;
+  text-align: center;
+}
+
+body #weather div {
+  margin: 5%;
+}
+
+body #weather p {
+  margin-top: 2%;
+}
+
+body #actu {
+  height: 100vh;
+  width: 50vw;
+  text-align: center;
+}
+
+body #cloud {
+  -webkit-animation: float 5s ease-in-out infinite;
+          animation: float 5s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+body .sad {
+  -webkit-animation: crying 0.5s infinite linear;
+          animation: crying 0.5s infinite linear;
+  width: 3px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  left: 420px;
+  opacity: 0.2;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  z-index: -1;
+}
+
+body .curve {
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 0;
+  -webkit-box-shadow: 10px 10px 10px #c6c6c6;
+          box-shadow: 10px 10px 10px #c6c6c6;
+}
+
+body .top1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  top: 200px;
+  left: 420px;
+}
+
+body .top2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  top: 150px;
+  left: 450px;
+}
+
+body .top3 {
+  width: 170px;
+  height: 170px;
+  border-radius: 135px;
+  top: 130px;
+  left: 500px;
+}
+
+body .top4 {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  top: 200px;
+  left: 630px;
+}
+
+body .top5 {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  top: 225px;
+  left: 600px;
+}
+
+body .mouth {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border-bottom: 2px solid black;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+  position: absolute;
+  top: 220px;
+  left: 550px;
+  z-index: 0;
+}
+
+body .mouth-hover {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border: 2px solid #000000;
+  position: absolute;
+  top: 240px;
+  left: 560px;
+}
+
+body .left-eye {
+  width: 15px;
+  height: 15px;
+  background-color: #000000;
+  border-radius: 10px;
+  position: absolute;
+  top: 200px;
+  left: 520px;
+  z-index: 0;
+}
+
+body .right-eye {
+  width: 15px;
+  height: 15px;
+  background-color: #000000;
+  border-radius: 10px;
+  position: absolute;
+  top: 200px;
+  left: 590px;
+  z-index: 0;
+}
+
+body .eyes-hover {
+  height: 2px;
+  top: 205px;
+  border-radius: 40%;
+}
+
+@-webkit-keyframes crying {
+  0% {
+    -webkit-box-shadow: 30px 30px,  40px 40px,   50px 75px,  55px 50px,  70px 100px,  80px 95px,  110px 45px,  90px 35px;
+            box-shadow: 30px 30px,  40px 40px,   50px 75px,  55px 50px,  70px 100px,  80px 95px,  110px 45px,  90px 35px;
+  }
+  25% {
+    -webkit-box-shadow: 30px 45px, 40px 60px, 50px 90px, 55px 65px, 70px 120px, 80px 120px, 110px 70px, 90px 60px;
+            box-shadow: 30px 45px, 40px 60px, 50px 90px, 55px 65px, 70px 120px, 80px 120px, 110px 70px, 90px 60px;
+  }
+  26% {
+    -webkit-box-shadow: 30px 45px, 40px 60px, 50px 90px, 55px 65px, 70px 40px, 80px 20px, 110px 70px, 90px 60px;
+            box-shadow: 30px 45px, 40px 60px, 50px 90px, 55px 65px, 70px 40px, 80px 20px, 110px 70px, 90px 60px;
+  }
+  50% {
+    -webkit-box-shadow: 30px 70px, 40px 80px, 50px 100px, 55px 80px, 70px 60px, 80px 45px, 110px 95px, 90px 85px;
+            box-shadow: 30px 70px, 40px 80px, 50px 100px, 55px 80px, 70px 60px, 80px 45px, 110px 95px, 90px 85px;
+  }
+  51% {
+    -webkit-box-shadow: 30px 70px, 40px 80px, 50px 45px, 55px 80px, 70px 60px, 80px 45px, 110px 95px, 90px 85px;
+            box-shadow: 30px 70px, 40px 80px, 50px 45px, 55px 80px, 70px 60px, 80px 45px, 110px 95px, 90px 85px;
+  }
+  75% {
+    -webkit-box-shadow: 30px 95px, 40px 100px, 50px 60px, 55px 95px, 70px 80px, 80px 70px, 110px 120px, 90px 110px;
+            box-shadow: 30px 95px, 40px 100px, 50px 60px, 55px 95px, 70px 80px, 80px 70px, 110px 120px, 90px 110px;
+  }
+  76% {
+    -webkit-box-shadow: 30px 95px, 40px 100px, 50px 60px, 55px 35px, 70px 80px, 80px 70px, 110px 25px, 90px 15px;
+            box-shadow: 30px 95px, 40px 100px, 50px 60px, 55px 35px, 70px 80px, 80px 70px, 110px 25px, 90px 15px;
+  }
+  100% {
+    -webkit-box-shadow: 30px 120px, 40px 120px, 50px 75px, 55px 50px, 70px 100px, 80px 95px, 110px 45px, 90px 35px;
+            box-shadow: 30px 120px, 40px 120px, 50px 75px, 55px 50px, 70px 100px, 80px 95px, 110px 45px, 90px 35px;
+  }
+}
+
+@keyframes crying {
+  0% {
+    -webkit-box-shadow: 30px 30px,  40px 40px,   50px 75px,  55px 50px,  70px 100px,  80px 95px,  110px 45px,  90px 35px;
+            box-shadow: 30px 30px,  40px 40px,   50px 75px,  55px 50px,  70px 100px,  80px 95px,  110px 45px,  90px 35px;
+  }
+  25% {
+    -webkit-box-shadow: 30px 45px, 40px 60px, 50px 90px, 55px 65px, 70px 120px, 80px 120px, 110px 70px, 90px 60px;
+            box-shadow: 30px 45px, 40px 60px, 50px 90px, 55px 65px, 70px 120px, 80px 120px, 110px 70px, 90px 60px;
+  }
+  26% {
+    -webkit-box-shadow: 30px 45px, 40px 60px, 50px 90px, 55px 65px, 70px 40px, 80px 20px, 110px 70px, 90px 60px;
+            box-shadow: 30px 45px, 40px 60px, 50px 90px, 55px 65px, 70px 40px, 80px 20px, 110px 70px, 90px 60px;
+  }
+  50% {
+    -webkit-box-shadow: 30px 70px, 40px 80px, 50px 100px, 55px 80px, 70px 60px, 80px 45px, 110px 95px, 90px 85px;
+            box-shadow: 30px 70px, 40px 80px, 50px 100px, 55px 80px, 70px 60px, 80px 45px, 110px 95px, 90px 85px;
+  }
+  51% {
+    -webkit-box-shadow: 30px 70px, 40px 80px, 50px 45px, 55px 80px, 70px 60px, 80px 45px, 110px 95px, 90px 85px;
+            box-shadow: 30px 70px, 40px 80px, 50px 45px, 55px 80px, 70px 60px, 80px 45px, 110px 95px, 90px 85px;
+  }
+  75% {
+    -webkit-box-shadow: 30px 95px, 40px 100px, 50px 60px, 55px 95px, 70px 80px, 80px 70px, 110px 120px, 90px 110px;
+            box-shadow: 30px 95px, 40px 100px, 50px 60px, 55px 95px, 70px 80px, 80px 70px, 110px 120px, 90px 110px;
+  }
+  76% {
+    -webkit-box-shadow: 30px 95px, 40px 100px, 50px 60px, 55px 35px, 70px 80px, 80px 70px, 110px 25px, 90px 15px;
+            box-shadow: 30px 95px, 40px 100px, 50px 60px, 55px 35px, 70px 80px, 80px 70px, 110px 25px, 90px 15px;
+  }
+  100% {
+    -webkit-box-shadow: 30px 120px, 40px 120px, 50px 75px, 55px 50px, 70px 100px, 80px 95px, 110px 45px, 90px 35px;
+            box-shadow: 30px 120px, 40px 120px, 50px 75px, 55px 50px, 70px 100px, 80px 95px, 110px 45px, 90px 35px;
+  }
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+body div {
+  margin: 5%;
+}
+
+body p {
+  margin-top: 2%;
+}
+
+body .button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 4px;
+}
+
+body #wi {
+  width: 100px;
+  height: 100px;
+}
+/*# sourceMappingURL=style.css.map */
