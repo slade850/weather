@@ -22,7 +22,7 @@ var success2 = function(dataI){
 }
 function appel(){
          let city = document.getElementById("truc").value;
-         var url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&lang=fr&appid=22b673e2f8d2486cd9234e78213e22f3";
+         var url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&lang=fr&appid=";
          
          $.get(url, success).done(function() {
 
@@ -37,7 +37,7 @@ function appel(){
         }
 
 function newsApp(count){
-          var urli = "https://newsapi.org/v2/everything?q="+count+"&language=fr&apiKey=c13696762c15461facf0f7ae702e1628";
+          var urli = "https://newsapi.org/v2/everything?q="+count+"&language=fr&apiKey=";
           $.get(urli, success2).done(function() {
 
         })
